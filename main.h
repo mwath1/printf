@@ -16,17 +16,21 @@
 #define S _SHORT 1
 #define S _LONG 2
 
-int _printf(const char *format, ...);
 
 /*
  * fmt: stands for the format in our case
- * fn : the funcction we will use
+ * fm_t : the funcction we will use
  */
 struct fmt 
 {
 	char fmt;
-	int(*fn)(int,int,int);
+	int (*fn)(va_list, char[], int, int, int, int);
 
 };
+typedef struct fmt fmt_t;
+
+int _printf(const char *format, ...);
+
+int handle_print(const char *fmt, int *i);
 
 #endif
