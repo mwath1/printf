@@ -96,11 +96,8 @@ int print_percent(va_list types, char buffer[],
 	UNUSED(size);
 	return (write(1, "%%", 1));
 }
-<<<<<<< HEAD
-=======
 
 /************************* PRINT INT *************************/
->>>>>>> b26845eb85cf24c79c97997c496921a2fdefc0ce
 /**
  * print_int - Print int
  * @types: Lista of arguments
@@ -189,7 +186,3 @@ int print_binary(va_list types, char buffer[],
 	}
 	return (count);
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> b26845eb85cf24c79c97997c496921a2fdefc0ce
